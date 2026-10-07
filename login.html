@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#06263d">
+    <title>Acceso · ZENIT ICUZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="login-body">
+<main class="login-shell">
+    <section class="login-visual" aria-label="Plataforma de control de fermentación">
+        <div class="login-brand"><span>ZENIT</span><small>ICUZ</small></div>
+        <div class="login-copy">
+            <span class="eyebrow light">CONTROL INTELIGENTE</span>
+            <h1>Fermentación bajo control, en todo momento.</h1>
+            <p>Supervisa el proceso, consulta tendencias y actúa con seguridad desde cualquier dispositivo.</p>
+            <div class="login-feature-grid">
+                <article><i data-lucide="activity"></i><strong>Tiempo real</strong><span>Lecturas y alertas instantáneas</span></article>
+                <article><i data-lucide="shield-check"></i><strong>Acceso seguro</strong><span>Sesiones protegidas y auditables</span></article>
+            </div>
+        </div>
+        <div class="login-orb orb-one"></div><div class="login-orb orb-two"></div><div class="login-wave"></div>
+    </section>
+    <section class="login-panel">
+        <div class="login-form-wrap">
+            <div class="mobile-login-brand"><span>ZENIT</span><small>ICUZ</small></div>
+            <span class="eyebrow">BIENVENIDO</span>
+            <h2>Inicia sesión</h2>
+            <p class="login-lead">Ingresa a la plataforma de control de fermentación.</p>
+            <div class="form-alert" id="login-alert" role="alert" hidden><i data-lucide="circle-alert"></i><span>Usuario o contraseña incorrectos.</span></div>
+            <form class="auth-form" id="login-form" autocomplete="on">
+                <label>Usuario<div class="field"><i data-lucide="user"></i><input name="username" value="admin" autocomplete="username" required></div></label>
+                <label>Contraseña<div class="field"><i data-lucide="lock-keyhole"></i><input id="login-password" type="password" name="password" value="admin" autocomplete="current-password" required><button class="field-action" type="button" data-toggle-password="login-password" aria-label="Mostrar contraseña"><i data-lucide="eye"></i></button></div></label>
+                <div class="login-options"><label class="check"><input type="checkbox" checked><span>Recordar sesión</span></label><span>Acceso administrativo</span></div>
+                <button class="primary-button login-submit" type="submit"><span>Ingresar a la plataforma</span><i data-lucide="arrow-right"></i></button>
+            </form>
+            <div class="demo-credentials"><i data-lucide="key-round"></i><div><strong>Credenciales iniciales</strong><span>Usuario: admin · Contraseña: admin</span></div></div>
+        </div>
+    </section>
+</main>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="assets/js/login.js"></script>
+</body>
+</html>
+
